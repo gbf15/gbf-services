@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBF-services</title>
+    <style>
+        /* Common styles */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header styles */
+        .header {
+            background-color:  #FF0800;
+            padding: 10px;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+        .header2 {
+            background-color: white;
+            padding: 10px;
+        }
+        .header2 table {
+            width: 100%;
+        }
+        .header2 td {
+            padding: 10px;
+            text-align: center;
+        }
+        #store, #about, #Contacts {
+            text-decoration: none;
+            font-size: 20px;
+            color: #FF0800;
+        }
+        /* Product styles */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            flex: 1 1 100%;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 40%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product img:hover{
+            box-shadow: 10px 5px 10px 5px gray;
+        }
+        .products a{
+            text-decoration: none;
+            color: black;
+        }
+        /* Footer styles */
+        .footer {
+            background-color: #FF0800;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999; /* Ensure the icon stays on top of other elements */
+            cursor: pointer;
+        }
+
+        /* Media query for phones */
+        @media only screen and (max-width: 600px) {
+            .header {
+                font-size: 20px;
+            }
+            #store, #about, #Contacts {
+                font-size: 16px;
+            }
+            .product {
+                flex: 1 1 90%;
+            }
+            .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .whatsapp-icon img{
+                width:60px;
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Online store -->
+    <div class="container">
+        <div class="header">
+            Enjoy!
+        </div>
+        <div class="header2">
+            <table>
+                <tr>
+                    <td><a  href="index.html" id="store">Store</a></td>
+                    <td><a href="#footer" id="about">About</a></td>
+        
+                </tr>
+            </table>
+        </div>
+        <div class="products">
+            <a href="index.html"><img src="/img/Untitled-removebg-preview (1).png" alt="go-back" width="150px"></a> 
+            <div class="product">
+                <a target="_blank" href="anghami.html">
+                    <img src="img/anghami.png" alt="pubg">
+                    <p>Anghami</p>
+                </a>
+            </div>
+            <div class="product">
+                <a target="_blank" href="netflix.html">
+                    <img src="img/netflix.webp" alt="Telecom Services">
+                    <p>Netflix</p>
+                </a>
+            </div>
+            <div class="product">
+                <a target="_blank" href="spotify.html">
+                    <img src="img/spotify-logo-removebg-preview.png" alt="Telecom Services">
+                    <p>Spotify</p>
+                </a>
+            </div>
+            <div class="product">
+                <a target="_blank" href="shahid.html">
+                    <img src="img/shahid.jpg" alt="Telecom Services">
+                    <p>Shahid</p>
+                </a>
+            </div>
+        <div class="footer" id="footer">
+            <p><b>About us</b></p>
+            <p>
+                Clients choose our services for a multitude of reasons, but at the heart of it lies trust and reliability. We prioritize understanding the unique needs of each client, tailoring our solutions to meet their specific requirements
+            </p>
+        </div>
+    </div>
+</body>
+</html>
